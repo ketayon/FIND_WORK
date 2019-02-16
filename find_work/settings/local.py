@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'find_work.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-from find_work.secret import DB_PASSWORD, DB_HOST, DB_NAME, DB_USER
+from find_work.secret import DB_PASSWORD, DB_HOST, DB_NAME, DB_USER, ADMIN_EMAIL, MAILGUN_KEY, API
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
