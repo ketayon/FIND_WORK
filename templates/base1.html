@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Example</title>
+
+<body>
+  <header>Header</header>
+  <div id="main">
+	{% for job in jobs %}
+
+	<h4><a href='{{job.href}}'>{{job.title}}</a></h4>
+	<p>{{job.descript}}</p></br>
+	<p>{{job.company}}</p>
+	<hr></br>
+	{% endfor %}
+  </div>
+  <footer>Footer</footer>
+</body>
